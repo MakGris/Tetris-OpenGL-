@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5D6C2D32BBE4D0100D6A13F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D6C2D22BBE4D0100D6A13F /* main.cpp */; };
+		D5D6C2DC2BBE4DF000D6A13F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D6C2DB2BBE4DF000D6A13F /* OpenGL.framework */; };
+		D5D6C2DE2BBE4F1F00D6A13F /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D6C2DD2BBE4F1F00D6A13F /* libglfw.3.4.dylib */; };
+		D5D6C3112BBE4F5500D6A13F /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D6C2F12BBE4F3D00D6A13F /* libGLEW.2.2.0.dylib */; };
+		D5D6C3162BBE591400D6A13F /* displayGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D6C3152BBE591400D6A13F /* displayGrid.cpp */; };
+		D5D6C3192BBE5C2100D6A13F /* rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D6C3182BBE5C2100D6A13F /* rotate.cpp */; };
+		D5D6C31C2BBE849500D6A13F /* figures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D6C31B2BBE849500D6A13F /* figures.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5D6C2CD2BBE4D0100D6A13F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D5D6C2CF2BBE4D0100D6A13F /* Tetris(OpenGL) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tetris(OpenGL)"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D6C2D22BBE4D0100D6A13F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D5D6C2D92BBE4D2E00D6A13F /* Tetris(OpenGL).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tetris(OpenGL).entitlements"; sourceTree = "<group>"; };
+		D5D6C2DB2BBE4DF000D6A13F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D5D6C2DD2BBE4F1F00D6A13F /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = ../../../../../../opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
+		D5D6C2DF2BBE4F3D00D6A13F /* glew.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = glew.rb; sourceTree = "<group>"; };
+		D5D6C2E12BBE4F3D00D6A13F /* glewinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = glewinfo; sourceTree = "<group>"; };
+		D5D6C2E22BBE4F3D00D6A13F /* visualinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = visualinfo; sourceTree = "<group>"; };
+		D5D6C2E42BBE4F3D00D6A13F /* glew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		D5D6C2E52BBE4F3D00D6A13F /* glxew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		D5D6C2E62BBE4F3D00D6A13F /* wglew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		D5D6C2E92BBE4F3D00D6A13F /* CopyImportedTargetProperties.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = CopyImportedTargetProperties.cmake; sourceTree = "<group>"; };
+		D5D6C2EA2BBE4F3D00D6A13F /* glew-config.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = "glew-config.cmake"; sourceTree = "<group>"; };
+		D5D6C2EB2BBE4F3D00D6A13F /* glew-targets-release.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = "glew-targets-release.cmake"; sourceTree = "<group>"; };
+		D5D6C2EC2BBE4F3D00D6A13F /* glew-targets.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = "glew-targets.cmake"; sourceTree = "<group>"; };
+		D5D6C2EF2BBE4F3D00D6A13F /* glew.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = glew.pc; sourceTree = "<group>"; };
+		D5D6C2F12BBE4F3D00D6A13F /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+		D5D6C2F22BBE4F3D00D6A13F /* libGLEW.2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.2.dylib; sourceTree = "<group>"; };
+		D5D6C2F32BBE4F3D00D6A13F /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLEW.a; sourceTree = "<group>"; };
+		D5D6C2F42BBE4F3D00D6A13F /* libGLEW.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.dylib; sourceTree = "<group>"; };
+		D5D6C2F62BBE4F3D00D6A13F /* advanced.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = advanced.html; sourceTree = "<group>"; };
+		D5D6C2F72BBE4F3D00D6A13F /* basic.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = basic.html; sourceTree = "<group>"; };
+		D5D6C2F82BBE4F3D00D6A13F /* build.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = build.html; sourceTree = "<group>"; };
+		D5D6C2F92BBE4F3D00D6A13F /* credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = credits.html; sourceTree = "<group>"; };
+		D5D6C2FA2BBE4F3D00D6A13F /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		D5D6C2FB2BBE4F3D00D6A13F /* glew.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = glew.css; sourceTree = "<group>"; };
+		D5D6C2FC2BBE4F3D00D6A13F /* glew.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = glew.html; sourceTree = "<group>"; };
+		D5D6C2FD2BBE4F3D00D6A13F /* glew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glew.png; sourceTree = "<group>"; };
+		D5D6C2FE2BBE4F3D00D6A13F /* glew.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = glew.txt; sourceTree = "<group>"; };
+		D5D6C2FF2BBE4F3D00D6A13F /* glxew.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = glxew.html; sourceTree = "<group>"; };
+		D5D6C3002BBE4F3D00D6A13F /* gpl.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gpl.txt; sourceTree = "<group>"; };
+		D5D6C3012BBE4F3D00D6A13F /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		D5D6C3022BBE4F3D00D6A13F /* install.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = install.html; sourceTree = "<group>"; };
+		D5D6C3032BBE4F3D00D6A13F /* khronos.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = khronos.txt; sourceTree = "<group>"; };
+		D5D6C3042BBE4F3D00D6A13F /* log.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = log.html; sourceTree = "<group>"; };
+		D5D6C3052BBE4F3D00D6A13F /* mesa.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mesa.txt; sourceTree = "<group>"; };
+		D5D6C3062BBE4F3D00D6A13F /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
+		D5D6C3072BBE4F3D00D6A13F /* ogl_sm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ogl_sm.jpg; sourceTree = "<group>"; };
+		D5D6C3082BBE4F3D00D6A13F /* travis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = travis.png; sourceTree = "<group>"; };
+		D5D6C3092BBE4F3D00D6A13F /* wglew.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = wglew.html; sourceTree = "<group>"; };
+		D5D6C30D2BBE4F3D00D6A13F /* INSTALL_RECEIPT.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = INSTALL_RECEIPT.json; sourceTree = "<group>"; };
+		D5D6C30E2BBE4F3D00D6A13F /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D5D6C30F2BBE4F3D00D6A13F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D5D6C3152BBE591400D6A13F /* displayGrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = displayGrid.cpp; sourceTree = "<group>"; };
+		D5D6C3172BBE59B600D6A13F /* displayGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = displayGrid.h; sourceTree = "<group>"; };
+		D5D6C3182BBE5C2100D6A13F /* rotate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rotate.cpp; sourceTree = "<group>"; };
+		D5D6C31A2BBE5D2E00D6A13F /* rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		D5D6C31B2BBE849500D6A13F /* figures.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = figures.cpp; sourceTree = "<group>"; };
+		D5D6C31D2BBE8ED400D6A13F /* figures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = figures.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5D6C2CC2BBE4D0100D6A13F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D6C3112BBE4F5500D6A13F /* libGLEW.2.2.0.dylib in Frameworks */,
+				D5D6C2DE2BBE4F1F00D6A13F /* libglfw.3.4.dylib in Frameworks */,
+				D5D6C2DC2BBE4DF000D6A13F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5D6C2C62BBE4D0100D6A13F = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2D12BBE4D0100D6A13F /* Tetris(OpenGL) */,
+				D5D6C2D02BBE4D0100D6A13F /* Products */,
+				D5D6C2DA2BBE4DF000D6A13F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5D6C2D02BBE4D0100D6A13F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2CF2BBE4D0100D6A13F /* Tetris(OpenGL) */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5D6C2D12BBE4D0100D6A13F /* Tetris(OpenGL) */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2D92BBE4D2E00D6A13F /* Tetris(OpenGL).entitlements */,
+				D5D6C31D2BBE8ED400D6A13F /* figures.h */,
+				D5D6C2D22BBE4D0100D6A13F /* main.cpp */,
+				D5D6C3152BBE591400D6A13F /* displayGrid.cpp */,
+				D5D6C3172BBE59B600D6A13F /* displayGrid.h */,
+				D5D6C3182BBE5C2100D6A13F /* rotate.cpp */,
+				D5D6C31A2BBE5D2E00D6A13F /* rotate.h */,
+				D5D6C31B2BBE849500D6A13F /* figures.cpp */,
+			);
+			path = "Tetris(OpenGL)";
+			sourceTree = "<group>";
+		};
+		D5D6C2DA2BBE4DF000D6A13F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C3102BBE4F3D00D6A13F /* 2.2.0_1 */,
+				D5D6C2DD2BBE4F1F00D6A13F /* libglfw.3.4.dylib */,
+				D5D6C2DB2BBE4DF000D6A13F /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5D6C2E02BBE4F3D00D6A13F /* .brew */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2DF2BBE4F3D00D6A13F /* glew.rb */,
+			);
+			path = .brew;
+			sourceTree = "<group>";
+		};
+		D5D6C2E32BBE4F3D00D6A13F /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2E12BBE4F3D00D6A13F /* glewinfo */,
+				D5D6C2E22BBE4F3D00D6A13F /* visualinfo */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		D5D6C2E72BBE4F3D00D6A13F /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2E42BBE4F3D00D6A13F /* glew.h */,
+				D5D6C2E52BBE4F3D00D6A13F /* glxew.h */,
+				D5D6C2E62BBE4F3D00D6A13F /* wglew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		D5D6C2E82BBE4F3D00D6A13F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2E72BBE4F3D00D6A13F /* GL */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D5D6C2ED2BBE4F3D00D6A13F /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2E92BBE4F3D00D6A13F /* CopyImportedTargetProperties.cmake */,
+				D5D6C2EA2BBE4F3D00D6A13F /* glew-config.cmake */,
+				D5D6C2EB2BBE4F3D00D6A13F /* glew-targets-release.cmake */,
+				D5D6C2EC2BBE4F3D00D6A13F /* glew-targets.cmake */,
+			);
+			path = glew;
+			sourceTree = "<group>";
+		};
+		D5D6C2EE2BBE4F3D00D6A13F /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2ED2BBE4F3D00D6A13F /* glew */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		D5D6C2F02BBE4F3D00D6A13F /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2EF2BBE4F3D00D6A13F /* glew.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+		D5D6C2F52BBE4F3D00D6A13F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2EE2BBE4F3D00D6A13F /* cmake */,
+				D5D6C2F02BBE4F3D00D6A13F /* pkgconfig */,
+				D5D6C2F12BBE4F3D00D6A13F /* libGLEW.2.2.0.dylib */,
+				D5D6C2F22BBE4F3D00D6A13F /* libGLEW.2.2.dylib */,
+				D5D6C2F32BBE4F3D00D6A13F /* libGLEW.a */,
+				D5D6C2F42BBE4F3D00D6A13F /* libGLEW.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D5D6C30A2BBE4F3D00D6A13F /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2F62BBE4F3D00D6A13F /* advanced.html */,
+				D5D6C2F72BBE4F3D00D6A13F /* basic.html */,
+				D5D6C2F82BBE4F3D00D6A13F /* build.html */,
+				D5D6C2F92BBE4F3D00D6A13F /* credits.html */,
+				D5D6C2FA2BBE4F3D00D6A13F /* github.png */,
+				D5D6C2FB2BBE4F3D00D6A13F /* glew.css */,
+				D5D6C2FC2BBE4F3D00D6A13F /* glew.html */,
+				D5D6C2FD2BBE4F3D00D6A13F /* glew.png */,
+				D5D6C2FE2BBE4F3D00D6A13F /* glew.txt */,
+				D5D6C2FF2BBE4F3D00D6A13F /* glxew.html */,
+				D5D6C3002BBE4F3D00D6A13F /* gpl.txt */,
+				D5D6C3012BBE4F3D00D6A13F /* index.html */,
+				D5D6C3022BBE4F3D00D6A13F /* install.html */,
+				D5D6C3032BBE4F3D00D6A13F /* khronos.txt */,
+				D5D6C3042BBE4F3D00D6A13F /* log.html */,
+				D5D6C3052BBE4F3D00D6A13F /* mesa.txt */,
+				D5D6C3062BBE4F3D00D6A13F /* new.png */,
+				D5D6C3072BBE4F3D00D6A13F /* ogl_sm.jpg */,
+				D5D6C3082BBE4F3D00D6A13F /* travis.png */,
+				D5D6C3092BBE4F3D00D6A13F /* wglew.html */,
+			);
+			path = glew;
+			sourceTree = "<group>";
+		};
+		D5D6C30B2BBE4F3D00D6A13F /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C30A2BBE4F3D00D6A13F /* glew */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		D5D6C30C2BBE4F3D00D6A13F /* share */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C30B2BBE4F3D00D6A13F /* doc */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		D5D6C3102BBE4F3D00D6A13F /* 2.2.0_1 */ = {
+			isa = PBXGroup;
+			children = (
+				D5D6C2E02BBE4F3D00D6A13F /* .brew */,
+				D5D6C2E32BBE4F3D00D6A13F /* bin */,
+				D5D6C2E82BBE4F3D00D6A13F /* include */,
+				D5D6C2F52BBE4F3D00D6A13F /* lib */,
+				D5D6C30C2BBE4F3D00D6A13F /* share */,
+				D5D6C30D2BBE4F3D00D6A13F /* INSTALL_RECEIPT.json */,
+				D5D6C30E2BBE4F3D00D6A13F /* LICENSE.txt */,
+				D5D6C30F2BBE4F3D00D6A13F /* README.md */,
+			);
+			name = 2.2.0_1;
+			path = ../../../../../../opt/homebrew/Cellar/glew/2.2.0_1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5D6C2CE2BBE4D0100D6A13F /* Tetris(OpenGL) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5D6C2D62BBE4D0100D6A13F /* Build configuration list for PBXNativeTarget "Tetris(OpenGL)" */;
+			buildPhases = (
+				D5D6C2CB2BBE4D0100D6A13F /* Sources */,
+				D5D6C2CC2BBE4D0100D6A13F /* Frameworks */,
+				D5D6C2CD2BBE4D0100D6A13F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tetris(OpenGL)";
+			productName = "Tetris(OpenGL)";
+			productReference = D5D6C2CF2BBE4D0100D6A13F /* Tetris(OpenGL) */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5D6C2C72BBE4D0100D6A13F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D5D6C2CE2BBE4D0100D6A13F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = D5D6C2CA2BBE4D0100D6A13F /* Build configuration list for PBXProject "Tetris(OpenGL)" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5D6C2C62BBE4D0100D6A13F;
+			productRefGroup = D5D6C2D02BBE4D0100D6A13F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5D6C2CE2BBE4D0100D6A13F /* Tetris(OpenGL) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5D6C2CB2BBE4D0100D6A13F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D6C2D32BBE4D0100D6A13F /* main.cpp in Sources */,
+				D5D6C31C2BBE849500D6A13F /* figures.cpp in Sources */,
+				D5D6C3162BBE591400D6A13F /* displayGrid.cpp in Sources */,
+				D5D6C3192BBE5C2100D6A13F /* rotate.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D5D6C2D42BBE4D0100D6A13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D5D6C2D52BBE4D0100D6A13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D5D6C2D72BBE4D0100D6A13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Tetris(OpenGL)/Tetris(OpenGL).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 586H9K983F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/glfw/3.4/lib,
+					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D5D6C2D82BBE4D0100D6A13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Tetris(OpenGL)/Tetris(OpenGL).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 586H9K983F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/glfw/3.4/lib,
+					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5D6C2CA2BBE4D0100D6A13F /* Build configuration list for PBXProject "Tetris(OpenGL)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D6C2D42BBE4D0100D6A13F /* Debug */,
+				D5D6C2D52BBE4D0100D6A13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5D6C2D62BBE4D0100D6A13F /* Build configuration list for PBXNativeTarget "Tetris(OpenGL)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D6C2D72BBE4D0100D6A13F /* Debug */,
+				D5D6C2D82BBE4D0100D6A13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5D6C2C72BBE4D0100D6A13F /* Project object */;
+}
