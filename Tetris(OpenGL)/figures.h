@@ -7,3 +7,5 @@
 
 void makeHero(GLfloat centerX, GLfloat centerY);
 void makeTeeWee(GLfloat centerX, GLfloat centerY);
+void makeOrangeRicky(GLfloat centerX, GLfloat centerY);
+void makeBlueRicky(GLfloat centerX, GLfloat centerY);

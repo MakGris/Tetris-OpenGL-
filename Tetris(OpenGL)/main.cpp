@@ -66,10 +66,13 @@ int main(void)
 //        Resize(1080 , 960);  закомментировал, чтобы не вызывалась в loop и не сбрасывала перемещение объекта
         displayGrid();
         makeTeeWee(0, 10);
-        makeHero(0, 20);
+        makeHero(0, 18);
+        makeOrangeRicky(0, 15);
+        makeBlueRicky(0, 5);
+        
         rotate(window);
-        //DisplayAxis();
-        //MoveAndRotation(window);
+       
+        
         
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
